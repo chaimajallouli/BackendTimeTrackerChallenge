@@ -12,7 +12,7 @@ export class TempsService {
 
 
 
-      // find all
+  // find all
   getAllTemps() {
     return this.tempsRepository.find();
   }
@@ -21,7 +21,6 @@ export class TempsService {
   async createTemps(temps: CreateTemps) {
     const newTemps = await this.tempsRepository.create(temps);
     await this.tempsRepository.save(newTemps);
-
     return newTemps;
   }
 

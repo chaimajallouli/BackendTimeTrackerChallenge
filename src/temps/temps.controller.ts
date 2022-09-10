@@ -13,6 +13,7 @@ export class TempsController {
       return this.tempsService.getAllTemps();
     }
   
+
     // create temps
     @Post()
     async createTemps(@Body() temps: CreateTemps) {
